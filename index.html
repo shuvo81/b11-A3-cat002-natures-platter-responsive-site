@@ -15,6 +15,8 @@
             font-family: "Sora", sans-serif;
         }
     </style>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,15 +38,344 @@
 
 <body class="sora-fonts">
     <!-- Header Section -->
-    <header>
+    <header class="bg-gradient-to-b from-[#fff] to-[#EFEBE3]">
+        <!-- Navbar -->
+        <div class="navbar md:container mx-auto">
+            <div class="navbar-start">
+                <div>
+                    <a href="#"><img src="./c2-assets/logo-header.png" class="hidden md:flex"></a>
+                    <a href="#"><img src="./c2-assets/logo-footer.png" class="flex md:hidden"></a>
+                </div>
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Products</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar-center hidden md:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Products</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end hidden md:flex gap-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="btn border-nature-primary">Login</a>
+                <a class="btn bg-nature-primary text-white">Register</a>
+            </div>
+        </div>
+        <!-- Banner sectio0n -->
+        <div class="flex flex-col ">
+            <!-- Text Content -->
+            <div class="space-y-10 text-center p-12 lg:p-24">
+                <h2 class="text-3xl md:text-6xl font-bold">Freshness <span class="text-nature-primary">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h2>
+
+                <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got
+                    you covered every day!</p>
+            </div>
+            <!-- Image Content -->
+            <div class="flex-1">
+                <img src="./c2-assets/hero-vegetables.png" class="sm:w-full md:w-[1030px] mx-auto" />
+            </div>
+        </div>
     </header>
 
     <!-- Main Section -->
     <main>
+        <!-- Services section -->
+        <section class="my-24 md:container mx-auto">
+            <h3 class="text-5xl text-nature-primary font-bold mb-12">Services
+            </h3>
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="card  w-full border bg-nature-secondary-bg">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar">
+                            <div class="w-32 rounded-full bg-[#FFF]">
+                                <img src="./c2-assets/service.png" />
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-5">
+                        <h2 class="text-2xl font-semibold ">24/7 Services </h2>
+                        <p>Our support team is available around the clock to assist you whenever needed. We are
+                            committed to providing reliable service at any hour of the day.</p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card  w-full border bg-nature-secondary-bg">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar">
+                            <div class="w-32 rounded-full bg-[#FFF]">
+                                <img src="./c2-assets/delivery.png" />
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-5">
+                        <h2 class="text-2xl font-semibold">Fast Delivery</h2>
+                        <p>We prioritize prompt and dependable delivery for every order you place. Your items will
+                            arrive quickly and securely, ensuring your satisfaction.</p>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card  w-full border bg-nature-secondary-bg">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar ">
+                            <div class="w-32 rounded-full bg-[#FFF]">
+                                <img src="./c2-assets/healthy.png" />
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-5">
+                        <h2 class="text-2xl font-semibold ">Healthy Products </h2>
+                        <p>Our products are carefully sourced to ensure they are 100% natural and safe. We are dedicated
+                            to promoting health and well-being through quality selections.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular products section -->
+        <section class="my-24 bg-nature-secondary-bg">
+            <div class="py-24 md:container mx-auto">
+                <h3 class="text-5xl text-nature-primary font-bold mb-12">Services
+                </h3>
+
+                <div class="grid gap-6 grid-rows-3 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                    <!-- card 1 -->
+                    <div class="row-span-3 col-span-2">
+                        <div class="card bg-gradient-to-b from-[#179800] to-[#FFFFFF]">
+                            <div class="card-body space-y-2">
+                                <h2 class="card-title text-white mt-6">30% off</h2>
+                                <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
+
+                                <div class="card-actions">
+                                    <button class="btn bg-white">Buy Now</button>
+
+                                </div>
+                            </div>
+                            <figure class="px-10 pt-10">
+                                <img src="./c2-assets/vegetable-offer.png"
+                                    alt="vegetable-offer" class="rounded-xl" />
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div>
+                        <div class="grid grid-flow-col card bg-white items-center">
+                            <div class="bg-[#EFEBE3] rounded-lg mx-4">
+                                <figure>
+                                    <img src="./c2-assets/onion.png"
+                                        alt="Shoes" class="p-2"/>
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span class="text-base">4.5</span>
+                                  </div>
+                                <h2 class="card-title">Onion 1 KG</h2>
+                                <h3 class="text-base">$39.99</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
     </main>
 
     <!-- Footer Section -->
     <footer>
     </footer>
 </body>
+
 </html>
